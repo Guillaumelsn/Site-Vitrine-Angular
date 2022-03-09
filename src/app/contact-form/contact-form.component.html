@@ -1,0 +1,49 @@
+<form>
+
+    <h1>Formulaire de contact</h1>
+
+    <div class="contactForm">
+
+        <!-- <fieldset class="informations_contact"> -->
+        <label>Prénom : </label>
+        <input id="prenom" type="text">
+
+        <label>Nom : </label>
+        <input id="nom" type="text" style="text-transform: uppercase;">
+
+        <label>Adresse mail : </label>
+        <input id="adresse_mail" type="email">
+
+        <label>Numéro de téléphone : </label>
+        <input id="numero_telephone" type="text" maxlength="10"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+        <label>Adresse postale : </label>
+        <textarea id="adresse_postale"></textarea>
+
+        <label>Code postal : </label>
+        <input id="code_postal" type="text" maxlength="5"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+        <label>Ville : </label>
+        <input id="ville" type="text">
+        <!-- </fieldset> -->
+
+        <!-- <fieldset class="message"> -->
+        <label>Objet de la prise de contact : </label>
+        <select id="objet_contact">
+            <option value="" selected disabled hidden></option>
+            <option value="Demande">Demande</option>
+            <option value="Suggestion">Suggestion</option>
+            <option value="Demande">Autre raison</option>
+        </select>
+
+        <label>Message : </label>
+        <textarea id="message"></textarea>
+        <!-- </fieldset> -->
+
+    </div>
+
+    <button type="submit" class="validation_button">Valider</button>
+
+</form>

@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    color: #F05454;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    color: #F5F5F5;
+}
+
+#prenom, #nom, #numero_telephone, #code_postal, #ville{
+    background-color: #FBF8F1;
+    border-color: #F05454;
+    border-radius: 0.3em;
+    font-size: 18px;
+    width: 20%;
+}
+
+#adresse_mail {
+    background-color: #FBF8F1;
+    border-color: #F05454;
+    border-radius: 0.3em;
+    font-size: 18px;
+    width: 30%;  
+}
+
+#adresse_postale{
+    background-color: #FBF8F1;
+    border-color: #F05454;
+    border-radius: 0.3em;
+    font-size: 18px;
+    width: 30%;
+    height: 80px;
+    margin: auto;
+}
+
+#message{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: #FBF8F1;
+    border-color: #F05454;
+    border-radius: 0.3em;
+    font-size: 18px;
+}
+
+.validation_button{
+    float: right;
+    margin: 20px 120px 20px 0px;
+    color: #F5F5F5;
+    font-size: 20px;
+    background-color: #F05454;
+    border-color: #F05454;
+    border-radius: 0.3em;
+}
+
+button[type="submit"].validation_button:hover {
+    background-color: #f57676;
+}
