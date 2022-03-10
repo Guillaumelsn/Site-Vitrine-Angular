@@ -1,49 +1,77 @@
-<form>
+<div class="center">
 
-    <h1>Formulaire de contact</h1>
+    <form class="contactForm">
 
-    <div class="contactForm">
+        <h1>Formulaire de contact</h1>
 
-        <!-- <fieldset class="informations_contact"> -->
-        <label>Prénom : </label>
-        <input id="prenom" type="text">
+        <div class="contain">
 
-        <label>Nom : </label>
-        <input id="nom" type="text" style="text-transform: uppercase;">
+            <div class="wrap">
 
-        <label>Adresse mail : </label>
-        <input id="adresse_mail" type="email">
+                <label class="prenomLab">Prénom : </label>
+                <input class="inforsContact" type="text">
 
-        <label>Numéro de téléphone : </label>
-        <input id="numero_telephone" type="text" maxlength="10"
-            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                <label class="nomLab">Nom : </label>
+                <input class="inforsContact" type="text" style="text-transform: uppercase;">
 
-        <label>Adresse postale : </label>
-        <textarea id="adresse_postale"></textarea>
+            </div>
 
-        <label>Code postal : </label>
-        <input id="code_postal" type="text" maxlength="5"
-            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+            <div class="wrap">
 
-        <label>Ville : </label>
-        <input id="ville" type="text">
-        <!-- </fieldset> -->
+                <label class="adressemLab">Adresse mail : </label>
+                <input class="adresse_mail" type="email">
 
-        <!-- <fieldset class="message"> -->
-        <label>Objet de la prise de contact : </label>
-        <select id="objet_contact">
-            <option value="" selected disabled hidden></option>
-            <option value="Demande">Demande</option>
-            <option value="Suggestion">Suggestion</option>
-            <option value="Demande">Autre raison</option>
-        </select>
+                <label class="telephoneLab">Numéro de téléphone : </label>
+                <input class="inforsContact" type="text" maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
 
-        <label>Message : </label>
-        <textarea id="message"></textarea>
-        <!-- </fieldset> -->
+            </div>
 
-    </div>
+        </div>
 
-    <button type="submit" class="validation_button">Valider</button>
+        <div class="contain">
 
-</form>
+            <div class="wrap">
+
+                <label class="adressepLab">Adresse postale : </label>
+                <textarea class="adresse_postale"></textarea>
+
+            </div>
+
+            <div class="wrap">
+
+                <label class="codepLab">Code postal : </label>
+                <input class="inforsContact" type="text" maxlength="5"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+                <label class="villeLab">Ville : </label>
+                <input class="inforsContact" type="text">
+
+            </div>
+
+        </div>
+
+        <div class="wrap1">
+
+            <label class="objDemandeLab">Objet de la prise de contact : </label>
+            <select class="objet_contact">
+                <option value="" selected disabled hidden></option>
+                <option value="Demande">Demande</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="Demande">Autre raison</option>
+            </select>
+
+        </div>
+
+        <div class="wrap2">
+
+            <label class="messageLab">Message : </label>
+            <textarea class="message"></textarea>
+
+        </div>
+
+        <button type="submit" class="validation_button">Valider</button>
+
+    </form>
+
+</div>

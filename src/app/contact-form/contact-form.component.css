@@ -1,13 +1,6 @@
-h1 {
-  text-align: center;
-  color: #F05454;
-  font-size: 50px;
-  margin-bottom: 15px;
-}
-
-label {
-  font-size: 20px;
-  color: #F5F5F5;
+.center {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .contactForm {
@@ -21,7 +14,19 @@ label {
   color: #F5F5F5;
 }
 
-#prenom, #nom, #adresse_mail, #numero_telephone, #code_postal, #ville {
+.contactForm h1 {
+  text-align: center;
+  color: #F05454;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.contactForm label {
+  font-size: 20px;
+  color: #F5F5F5;
+}
+
+.contactForm .inforsContact {
   background-color: #FBF8F1;
   border-color: #F05454;
   border-radius: 0.3em;
@@ -29,7 +34,15 @@ label {
   width: 20%;
 }
 
-#adresse_postale {
+.contactForm .adresse_mail {
+  background-color: #FBF8F1;
+  border-color: #F05454;
+  border-radius: 0.3em;
+  font-size: 18px;
+  width: 30%;
+}
+
+.contactForm .adresse_postale {
   background-color: #FBF8F1;
   border-color: #F05454;
   border-radius: 0.3em;
@@ -39,8 +52,12 @@ label {
   margin: auto;
 }
 
-#message {
-  width: 80%;
+.contactForm .messageLab {
+  margin: 15px 0px 15px 180px;
+}
+
+.contactForm .message {
+  width: 900px;
   height: 100px;
   margin: auto;
   background-color: #FBF8F1;
@@ -49,9 +66,10 @@ label {
   font-size: 18px;
 }
 
-.validation_button {
-  float: right;
-  margin: 20px 120px 20px 0px;
+.contactForm .validation_button {
+  width: 80px;
+  margin: 20px 0px 20px 0px;
+  margin-left: 75%;
   color: #F5F5F5;
   font-size: 20px;
   background-color: #F05454;
@@ -59,7 +77,7 @@ label {
   border-radius: 0.3em;
 }
 
-button[type="submit"].validation_button:hover {
+.contactForm button[type="submit"].validation_button:hover {
   background-color: #f57676;
 }
 /*# sourceMappingURL=contact-form.component.css.map */
