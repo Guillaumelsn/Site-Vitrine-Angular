@@ -4,6 +4,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { AppComponent } from './app.component';
+import { CardActorComponent } from './card-actor/card-actor.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 //import { RouterModule } from '@angular/router';
@@ -12,9 +13,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
+    CardActorComponent
     NavbarComponent,
 
-   
   ],
   imports: [
     BrowserModule,
