@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +6,4 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title(title: any) {
-    throw new Error('Method not implemented.');
   }
-}

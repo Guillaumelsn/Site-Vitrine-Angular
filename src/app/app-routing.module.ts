@@ -3,12 +3,11 @@ import {Routes, RouterModule} from '@angular/router';
 
 import {NavbarComponent } from "./navbar/navbar.component"
 import { RouterOutlet } from '@angular/router';
+import { ContactFormComponent } from "./contact-form/contact-form.component";
+import { NationCardComponent } from "./nation-card/nation-card.component";
 
 const routes: Routes =[
-  {path: 'Français', component: NavbarComponent},
-  {path: 'Anglais', component: NavbarComponent},
-  {path: 'Americains', component: NavbarComponent},
-  {path: 'Contact', component: NavbarComponent} 
+  {path: 'Contact', component: ContactFormComponent} 
 ];
 
 @NgModule({

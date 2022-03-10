@@ -10,32 +10,21 @@ import { HttpClientModule} from "@angular/common/http";
 import { CardActorComponent } from './card-actor/card-actor.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-//import { RouterModule } from '@angular/router';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactFormComponent,
-    
+    ContactFormComponent, CardActorComponent, NavbarComponent,NationCardComponent,
   ],
   imports: [
     BrowserModule,
-    NationCardComponent
-  ],
-  imports: [
-    BrowserModule, HttpClientModule
-    CardActorComponent
-    NavbarComponent,
-
-  ],
-  imports: [
-    BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-   // RouterModule
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,54 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #121212;
-  font-family: 'Roboto Slab', serif;
-}
-img {
-  margin-top: 10px 0 0 30px;
-  height:  60px;
-}
-.spacer{
-  flex: 1 1 auto;
-}
-nav{
-  display: flex;
-  justify-content: flex-end;
-
-  a {
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    font-size: 25px;
-    color: crimson;
-    text-decoration: none;
-    letter-spacing: 0.10px;
-  
-
-  }
+  background-color: black;
 }
 .center{
+  img {
+    margin-top: 10px 0 0 30px;
+    height:  60px;
+  }
+  nav{
+    display: flex;
+    justify-content: flex-end;
+    a {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      font-size: 25px;
+      color: crimson;
+      text-decoration: none;
+      letter-spacing: 0.10px;
+    }
+  }
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   width: 1200px;
   margin:  0 auto;
-}
-
-a::after{
-  content: "";
-  position: absolute;
-  top: 50px;
-  background-color: white;
-  transform: scale(0);
-  transition: transform 0.2s ease-in-out;
-}
-a:hover::after {
-  transform: scale(1);
-  content: "";
-  display: block;
-  width: 80%;
-  height: 1px;
-  background-color: white;
+  
+  a::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    top: 20px;
+    background-color: white;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+  a:hover::after {
+    transform: scale(1);
+    content: "";
+    background-color: white;
+  }
 }
 
 
