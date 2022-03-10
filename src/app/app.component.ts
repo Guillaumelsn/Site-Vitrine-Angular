@@ -7,5 +7,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Site-Vitrine-Angular';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 }
