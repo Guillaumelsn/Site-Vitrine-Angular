@@ -1,0 +1,77 @@
+<div class="center">
+
+    <form class="contactForm">
+
+        <h1>Formulaire de contact</h1>
+
+        <div class="contain">
+
+            <div class="wrap">
+
+                <label class="prenomLab">Prénom : </label>
+                <input class="inforsContact" type="text">
+
+                <label class="nomLab">Nom : </label>
+                <input class="inforsContact" type="text" style="text-transform: uppercase;">
+
+            </div>
+
+            <div class="wrap">
+
+                <label class="adressemLab">Adresse mail : </label>
+                <input class="adresse_mail" type="email">
+
+                <label class="telephoneLab">Numéro de téléphone : </label>
+                <input class="inforsContact" type="text" maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+            </div>
+
+        </div>
+
+        <div class="contain">
+
+            <div class="wrap">
+
+                <label class="adressepLab">Adresse postale : </label>
+                <textarea class="adresse_postale"></textarea>
+
+            </div>
+
+            <div class="wrap">
+
+                <label class="codepLab">Code postal : </label>
+                <input class="inforsContact" type="text" maxlength="5"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+
+                <label class="villeLab">Ville : </label>
+                <input class="inforsContact" type="text">
+
+            </div>
+
+        </div>
+
+        <div class="wrap1">
+
+            <label class="objDemandeLab">Objet de la prise de contact : </label>
+            <select class="objet_contact">
+                <option value="" selected disabled hidden></option>
+                <option value="Demande">Demande</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="Demande">Autre raison</option>
+            </select>
+
+        </div>
+
+        <div class="wrap2">
+
+            <label class="messageLab">Message : </label>
+            <textarea class="message"></textarea>
+
+        </div>
+
+        <button type="submit" class="validation_button">Valider</button>
+
+    </form>
+
+</div>

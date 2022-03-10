@@ -4,6 +4,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { AppComponent } from './app.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 import { NationCardComponent } from './nation-card/nation-card.component';
 import { HttpClientModule} from "@angular/common/http";
 import { CardActorComponent } from './card-actor/card-actor.component';
@@ -15,6 +16,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ContactFormComponent,
+    
+  ],
+  imports: [
+    BrowserModule,
     NationCardComponent
   ],
   imports: [
