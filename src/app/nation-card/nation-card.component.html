@@ -1,18 +1,18 @@
-<div class="card-nation center">
+<div *ngFor="let nationnalite of nationnalites " class="card-nation center">
     <div class="text-nation">
-        <h3>{{title}}</h3>
-        <h2>{{subtitle}}<span>{{span}}</span></h2>
-        <p>{{description}}</p>
-        <p>{{description}}</p>
+        <h3>{{nationnalite.title}}</h3>
+        <h2>{{nationnalite.subtitle}}<span>{{nationnalite.span}}</span></h2>
+        <p>{{nationnalite.description}}</p>
+        <!-- <p>{{Nationnalite.description}}</p> -->
     </div>
     <div class="picture-nation">
         <div class="img">
-        <img [src]="imageUrl" alt="">
-        <img [src]="imageUrl1" alt="">
-        <img [src]="imageUrl2" alt="">
-        <img [src]="imageUrl3" alt="">
+        <img [src]="nationnalite.imageUrl" alt="">
+        <img [src]="nationnalite.imageUrl1" alt="">
+        <img [src]="nationnalite.imageUrl2" alt="">
+        <img [src]="nationnalite.imageUrl3" alt="">
     </div>
     
-    <button class="acteur-access">Accéder au acteurs</button>
+    <button>{{nationnalite.buttonText}}</button>
     </div>
 </div>
