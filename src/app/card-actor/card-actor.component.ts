@@ -4,8 +4,8 @@ import acteurJson from "../../assets/Data/acteur-francais.json"
 interface Acteurs {
   nameActor: string; 
   imageUrl: string; 
-  description: string; 
- 
+  description: string;
+  big: boolean;
 }
 @Component({
   selector: 'app-card-actor',
@@ -13,26 +13,26 @@ interface Acteurs {
   styleUrls: ['./card-actor.component.scss']
 })
 
-export class CardActorComponent implements OnInit {
-  big!: boolean;
+
+
+export class CardActorComponent {
+  // big!: boolean; 
   acteur: Acteurs[] = acteurJson;
-   
-  
-  ngOnInit(): void {}
+  displayFilm(acteur: any){
+    const card = document.getElementById("card");
+    if (acteur.big == false) {
+      acteur.big = true;
+      card!.style.height = "90em";
 
-  displayFilm(){
-    const card = document.getElementById('card');
-
-    if(this.big == false){
-      card!.style.height = "50em";
-      this.big = true; 
-      document.getElementById('chevron')?.classList.add('rotation'); 
-
-    }else{
+    } else {
+      acteur.big = false;
       card!.style.height = "27em";
-      this.big = false; 
-      document.getElementById('chevron')?.classList.remove('rotation');
     }
+    // const card = document.getElementsByClassName('card');
+
+    // document.getElementById('chevron')?.classList.add('rotation'); 
+    // card?.classList.add('active');
+
   }
 }
 

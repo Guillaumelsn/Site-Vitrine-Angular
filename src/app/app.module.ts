@@ -13,11 +13,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { ApproutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactFormComponent, CardActorComponent, NavbarComponent,NationCardComponent, LandingPageComponent,
+    ContactFormComponent, CardActorComponent, NavbarComponent,NationCardComponent, LandingPageComponent, HeaderComponent,
   ],
   imports: [
     BrowserModule,
