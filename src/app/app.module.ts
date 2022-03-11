@@ -11,11 +11,13 @@ import { CardActorComponent } from './card-actor/card-actor.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { ApproutingModule } from './app-routing.module';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactFormComponent, CardActorComponent, NavbarComponent,NationCardComponent,
+    ContactFormComponent, CardActorComponent, NavbarComponent,NationCardComponent, LandingPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { RouterModule } from '@angular/router';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    RouterModule
+    RouterModule,
+    ApproutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
