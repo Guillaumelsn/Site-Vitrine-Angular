@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "Francais",
         "title": "Acteurs Francais",
         "subtitle": "Présentation de nos acteurs",
         "span": "francais",
@@ -12,7 +12,7 @@
         "buttonText": "Accéder au acteurs"
     },
     {
-        "id": 2,
+        "id": "Américains",
         "title": "Acteurs Américains",
         "subtitle": "Présentation de nos acteurs",
         "span": "Américains",
@@ -24,7 +24,7 @@
         "buttonText": "Accéder au acteurs"
     },
     {
-        "id": 2,
+        "id": "Anglais",
         "title": "Acteurs Anglais",
         "subtitle": "Présentation de nos acteurs",
         "span": "Anglais",

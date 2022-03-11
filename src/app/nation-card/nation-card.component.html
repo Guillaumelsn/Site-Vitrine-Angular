@@ -1,5 +1,5 @@
 <div *ngFor="let nationnalite of nationnalites " class="card-nation center">
-    <div class="text-nation">
+    <div [id]="nationnalite.id"class="text-nation">
         <h3>{{nationnalite.title}}</h3>
         <h2>{{nationnalite.subtitle}}<span>{{nationnalite.span}}</span></h2>
         <p>{{nationnalite.description}}</p>
@@ -13,6 +13,6 @@
         <img [src]="nationnalite.imageUrl3" alt="">
     </div>
     
-    <button>{{nationnalite.buttonText}}</button>
+    <button routerLink="cardsdesrip">{{nationnalite.buttonText}}</button>
     </div>
 </div>

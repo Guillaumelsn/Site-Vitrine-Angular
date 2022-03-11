@@ -1,5 +1,12 @@
 import { Component, OnInit  } from '@angular/core';
+import acteurJson from "../../assets/Data/acteur-francais.json"
 
+interface Acteurs {
+  nameActor: string; 
+  imageUrl: string; 
+  description: string; 
+ 
+}
 @Component({
   selector: 'app-card-actor',
   templateUrl: './card-actor.component.html',
@@ -7,18 +14,11 @@ import { Component, OnInit  } from '@angular/core';
 })
 
 export class CardActorComponent implements OnInit {
-
-  nameActor!: string; 
-  imageUrl!: string; 
-  description!: string; 
-  big!: boolean; 
+  big!: boolean;
+  acteur: Acteurs[] = acteurJson;
+   
   
-  ngOnInit() {
-    this.nameActor = 'Dwayne Johnson';
-    this.imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg';
-    this.description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum dolorum id neque doloribus perspiciatis blanditiis officia asperiores, sint, aperiam sunt earum vel voluptate recusandae ipsa nulla corrupti veniam dicta.'
-    this.big = false; 
-  }
+  ngOnInit(): void {}
 
   displayFilm(){
     const card = document.getElementById('card');
@@ -29,7 +29,7 @@ export class CardActorComponent implements OnInit {
       document.getElementById('chevron')?.classList.add('rotation'); 
 
     }else{
-      card!.style.height = "25em";
+      card!.style.height = "27em";
       this.big = false; 
       document.getElementById('chevron')?.classList.remove('rotation');
     }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import nationPll  from '../data-nation.json';
 
 interface Nationnalite  {
-  id: number;
+  id: string;
   title: string;
   subtitle: string;
   span: string;
