@@ -1,0 +1,26 @@
+[
+    {
+        "nameActor": "gerard depardieu",
+        "imageUrl":"https://static.lexpress.fr/medias_10049/w_2048,h_890,c_crop,x_0,y_365/w_968,h_545,c_fill,g_north/v1535723159/gerard-depardieu-22_5145169.jpg",
+        "description": "Gérard Depardieu est un « phénomène » du cinéma français. Il met la même énergie à animer ses personnages et à passer d'un film à son exact opposé. Si l'ancienne génération d'acteurs tels que Pierre Blanchar, Charles Vanel, Charles Boyer, Pierre Fresnay ou Gérard Philipe était issue de la tradition théâtrale, pour laquelle la parole importait plus que le corps, la pose ou le geste appliqué et calculé sur l'énergie libérée, la « nouvelle vague » fut marquée par l'école américaine de l'Actor Studio, avec Marlon Brando, James Dean, Montgomery Clift... Un jeu fondé sur l'introspection et la décontraction, l'extériorisation physique des contradictions qui se jouent au fond de la conscience et de l'inconscient.",
+        "big": false
+    },
+    {
+        "nameActor": "Jean Dujardin",
+        "imageUrl":"https://www.gala.fr/imgre/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F06.2F30.2F9b045a53-649d-4b9a-89f5-bcf563eeb5ff.2Ejpeg/2216x1536/quality/80/jean-dujardin.jpeg",
+        "description": "En 1999, Jean Dujardin est choisi pour jouer aux côtés d'Alexandra Lamy dans la série comique courte autour d'un couple intitulé Un Gars/Une Fille. Les personnages de Loulou et Chouchou sont plebiscités par les téléspectateurs et les deux comédiens deviennent vite populaires, tandis que leur liaison à la ville fait la une des magazines people. Jean Dujardin met un terme à la série et se sert de cette célébrité nouvelle pour débuter au cinéma, tout d'abord avec une petite apparition dans Ah ! si j'étais riche (2002) puis dans Bienvenue chez les Rozes (2003), dans lequel il joue un cambrioleur un peu stupide. Le film ne rencontre toutefois pas le succès esperé.",
+        "big": false
+    },
+    {
+        "nameActor": "Omar Sy",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Omar_Sy_%282020%29.jpg/220px-Omar_Sy_%282020%29.jpg",
+        "description": "Omar Sy est né en 1978 à Trappes d’un père sénégalais et d’une mère mauritanienne. C’est Jamel Debbouze, habitant le même quartier, qui le fait commencer à Radio Nova puis l’entraîne à Canal où il forme un duo comique avec Fred Testot notamment dans le célèbre Service après-vente.",
+        "big": false
+    },
+    {
+        "nameActor": "jean reno",
+        "imageUrl": "https://media.ngroup.be/IMAGE/IMAGE-S1-00017/69771-jean-reno.jpg",
+        "description": "Jean Reno, de son vrai nom Juan Moreno y Herrera Jimenez, est né le 30 juillet 1948 à Casablanca. Son père, linotypiste et sa mère, couturière, tous deux originaires d'Andalousie, se sont installés au Maroc pour fuir le régime politique de Franco. Adolescent, Jean Reno suit les cours du Conservatoire de Casablanca où il découvre les auteurs classiques et rêve de jouer la comédie sur scène. Il a 17 ans lorsque sa vie vole en éclats, sa mère est emportée par un cancer.",
+        "big": false
+    }
+]
